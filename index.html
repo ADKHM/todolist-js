@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            kanit: ['Kanit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="px-[280px] font-kanit dark:bg-[#252525]">
+  <h1 class="text-center mt-10 text-2xl font-medium dark:text-white">TODO LIST</h1>
+  <div class="mt-[50px]">
+    <div class="flex items-center gap-3">
+      <div
+        class="w-[550px] flex items-center border-2 border-gray-400 rounded-xl pr-[8px] cursor-pointer bg-transparent">
+        <input class="w-[550px] font-medium text-base py-2 px-4 rounded-xl outline-none text-[#C3C1E5] bg-transparent
+                " type="text" name="" id="searchinput" placeholder="Search Note...">
+        <i class='bxr bx-search-big text-2xl dark:text-white'></i>
+      </div>
+      <button
+        class="w-[64px] h-[38px] bg-[#6C63FF] font-medium text-lg text-white rounded-lg cursor-pointer" id="sendBtn">Send</button>
+      <button onclick="dark()" id="switch"
+        class="w-10 h-10 flex justify-center items-center bg-[#6C63FF] rounded-lg text-white text-2xl cursor-pointer"><i
+          class='bx  bx-moon'></i></button>
+    </div>
+    <ul type="none" class="mt-[30px] flex flex-col gap-4 px-[40px] pr-[40px]">
+      
+    </ul>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
